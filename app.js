@@ -76,3 +76,25 @@ document.getElementById('filter-price').addEventListener('input', function(e) {
 // Kick everything off on page load
 populateCityFilter();
 renderCards(properties);
+
+
+function runCalculator(price) {
+
+  // Read the three inputs
+  const downPayment = parseInt(document.getElementById('calc-down').value);
+  const annualRate = parseFloat(document.getElementById('calc-rate').value);
+  const years = parseInt(document.getElementById('calc-years').value);
+
+  // Update the loan amount display as user changes down payment
+  const principal = price - downPayment;
+  document.getElementById('calc-principal').value =
+    '$' + principal.toLocaleString();
+
+  // Run the calculation
+  const monthly = calculateMortgage(price, downPayment, annualRate, years);
+
+  // Show the result
+  document.getElementById('calc-output').textContent =
+    '$' + monthly.toLocaleString() + '/mo';
+  document.getElementById('calc-result').classList.remove('hidden');
+}
