@@ -23,9 +23,7 @@ const activeFilters = {
 // Fetches live rates once when the page loads
 // All rates come back relative to USD e.g. { USD: 1, CAD: 1.36, NGN: 1580, AUD: 1.53 }
 async function fetchExchangeRates() {
-  const response = await fetch(
-    `https://v6.exchangerate-api.com/v6/${API_KEY}/latest/USD`
-  );
+  const response = await fetch('/.netlify/functions/rates');
   const data = await response.json();
   return data.conversion_rates;
 }
