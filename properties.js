@@ -12,31 +12,7 @@ const properties = [
         img: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80"
     },
     {
-        id: 2, 
-        title: "Bright 3BR Condo - Liberty Village",
-        price: 689000,
-        currency: "CAD",
-        type: "buy",
-        beds: 3, 
-        baths: 2, 
-        sqft: 1050, 
-        city: "Toronto, ON",
-        img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80"
-    },
-    {
-        id: 3, 
-        title: "Studio near Robson St",
-        price: 1850,
-        currency: "CAD",
-        type: "rent",
-        beds: 0, 
-        baths: 1, 
-        sqft: 480, 
-        city: "Vancouver, BC",
-        img: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&q=80"
-    },
-    {
-        id: 4,
+        id: 2,
         title: "3BR Detached House - Lekki Phase 1",
         price: 240000000,
         currency: "NGN",
@@ -48,7 +24,19 @@ const properties = [
         img: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80"
     },
     {
-        id: 5, 
+        id: 3, 
+        title: "2BR Apartment - Bondi Beaach",
+        price: 3200,
+        currency: "AUD",
+        type: "rent",
+        beds: 2, 
+        baths: 1, 
+        sqft: 750, 
+        city: "Sydney, Australia",
+        img: "https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=600&q=80"
+    },
+    {
+        id: 4, 
         title: "Bright 3BR Condo - Liberty Village",
         price: 689000,
         currency: "CAD",
@@ -60,16 +48,28 @@ const properties = [
         img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80"
     },
     {
-        id: 6, 
-        title: "2BR Apartment - Bondi Beaach",
-        price: 3200,
-        currency: "AUD",
+        id: 5, 
+        title: "Studio near Robson St",
+        price: 1850,
+        currency: "CAD",
         type: "rent",
-        beds: 2, 
+        beds: 0, 
         baths: 1, 
-        sqft: 750, 
-        city: "Sydney, Australia",
-        img: "https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=600&q=80"
+        sqft: 480, 
+        city: "Vancouver, BC",
+        img: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&q=80"
+    },
+    {
+        id: 6, 
+        title: "Bright 3BR Condo - Liberty Village",
+        price: 689000,
+        currency: "CAD",
+        type: "buy",
+        beds: 3, 
+        baths: 2, 
+        sqft: 1050, 
+        city: "Toronto, ON",
+        img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80"
     },
     {
         id: 7,
