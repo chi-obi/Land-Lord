@@ -25,3 +25,32 @@ function getBadgeClasses(type) {
 function getBadgeLabel(type) {
     return type === 'rent' ? 'For rent' : 'For sale';
 }
+
+
+function filterProperties(propertyList, filters) {
+  return propertyList.filter(function(property) {
+
+    // Check type — skip if filter is 'all'
+    if (filters.type !== 'all' && property.type !== filters.type) {
+      return false;
+    }
+
+    // Check city — skip if filter is 'all'
+    if (filters.city !== 'all' && property.city !== filters.city) {
+      return false;
+    }
+
+    // Check beds — property must have at least the minimum
+    if (property.beds < filters.beds) {
+      return false;
+    }
+
+    // Check max price — only apply if user entered a value
+    if (filters.maxPrice && property.price > filters.maxPrice) {
+      return false;
+    }
+
+    // If it passed all checks, include it
+    return true;
+  });
+}
