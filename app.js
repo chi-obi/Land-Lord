@@ -2,9 +2,9 @@
 const grid = document.getElementById('card-grid');
 grid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-8';
 
-// API key called from api/rates
+// API key called from rates.js
 async function fetchExchangeRates() {
-  const response = await fetch('/api/rates');
+  const response = await fetch('/.netlify/functions/rates');
   const data = await response.json();
   return data.conversion_rates;
 }
