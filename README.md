@@ -30,7 +30,7 @@ https://land-lord-website.netlify.app/
 - Tailwind CSS (utility-first styling)
 - Vanilla JavaScript (ES6+)
 - localStorage for shortlist persistence
-- Deployed on Vercel
+- Deployed on Netlify
 
 ## What I learned
 
