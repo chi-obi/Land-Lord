@@ -1,36 +1,51 @@
 # LandLord
 
-A property search and comparison tool for first-time buyers and renters in Canada.
+A property search and comparison tool for buyers and renters across global markets.
 
-Built to solve a real problem: buyers and renters waste hours jumping between 
-listing sites with no easy way to filter, compare, or shortlist properties in 
-one place. LandLord gives them a clean, fast interface to do all three.
+
+## What it does
+
+LandLord lets buyers and renters search, filter, and compare property listings across multiple markets. Listings are displayed in their original currency and viewers can toggle between USD, CAD, NGN, and AUD using live exchange rates — making it usable across different markets without any friction.
+
 
 ## Live demo
 
 https://land-lord-website.netlify.app/
+
+https://github.com/chi-obi/Land-Lord
+
 
 ## Screenshots
 
 <img width="1469" height="792" alt="LandLord Screenshot" src="https://github.com/user-attachments/assets/79dae12b-2c9c-4d01-a6a1-91cd54d43eb3" />
 
 
+## About
+
+I built LandLord while transitioning from a career in sales and business development into software development. Coming from a background of selling across multiple industries, I understand the friction buyers and renters face when evaluating properties across fragmented platforms. This project is my attempt to solve that problem with clean, maintainable code — and to demonstrate that good software starts with understanding the user, not just the technology.
+
+
 ## Features
 
-- Browse rental and for-sale listings in a responsive card grid
-- Filter by listing type, city, bedroom count, and max price
-- Filters combine — all active at the same time
-- Results counter updates live as filters are applied
+- Property listings rendered dynamically from a structured data layer
+- Filter by listing type, city, bedroom count, and maximum price
+- Multi-currency support with live exchange rates via a secured API
+- Mortgage estimator on all buy listings with adjustable rate and amortization
+- Original listing currency displayed on every card regardless of viewer preference
+- Serverless function protects API key from client-side exposure
+- Fully deployed and production-ready on Netlify
 - Built with separation of concerns — data, utilities, components, 
-  and orchestration in separate files
+  and orchestration in separate file
+  
 
 ## Tech stack
 
-- HTML5
-- Tailwind CSS (utility-first styling)
-- Vanilla JavaScript (ES6+)
-- localStorage for shortlist persistence
+- HTML5 and Tailwind CSS (utility-first styling)
+- Vanilla JavaScript ES6+
+- Netlify Serverless Functions
+- ExchangeRate API
 - Deployed on Netlify
+
 
 ## What I learned
 
@@ -40,17 +55,32 @@ https://land-lord-website.netlify.app/
 - Git version control and GitHub workflow
 - Responsive layout with Tailwind's grid system
 
+
 ## Run locally
 
-1. Clone the repo
-   git clone https://github.com/chi-obi/Land-Lord.git
+```bash
+git clone https://github.com/chi-obi/Land-Lord.git
+cd Land-Lord
+```
 
-2. Open index.html in your browser
-   No build step needed — open directly or use VS Code Live Server
+Open `index.html` with VS Code Live Server. Note that the currency feature requires the Netlify function to run — exchange rates will not load in a purely local environment without a local functions runner.
 
-## About
 
-Built as part of a 6-month full stack development journey.
-Transitioning from 10+ years in sales and business development 
-into software development — bringing a product and business lens 
-to everything I build.
+## Architecture
+
+Built with a deliberate separation of concerns across four files:
+
+- `properties.js` — data layer only
+- `utils.js` — formatting and calculation functions
+- `components.js` — UI component templates
+- `app.js` — orchestration, state, and event handling
+
+Each file has one job. When something needs to change, only one file gets touched.
+
+
+## Roadmap
+
+- Property detail modal with full listing view
+- Saved shortlist page using localStorage
+- Agent contact form per listing
+- User-submitted listings with currency selection
