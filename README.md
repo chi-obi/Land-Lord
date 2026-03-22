@@ -8,11 +8,12 @@ one place. LandLord gives them a clean, fast interface to do all three.
 
 ## Live demo
 
-[Add your Vercel URL here once deployed]
+https://land-lord-website.netlify.app/
 
 ## Screenshots
 
-[Add a screenshot once deployed]
+<img width="1469" height="792" alt="LandLord Screenshot" src="https://github.com/user-attachments/assets/79dae12b-2c9c-4d01-a6a1-91cd54d43eb3" />
+
 
 ## Features
 
