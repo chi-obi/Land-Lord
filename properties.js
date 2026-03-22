@@ -1,0 +1,171 @@
+const properties = [
+    {
+        id: 1,
+        title: "Modern 2BR in Plateau-Mont-Royal",
+        price: 2400,
+        type: "rent",
+        beds: 2,
+        baths: 1,
+        sqft: 820,
+        city: "Montreal, QC",
+        img: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80"
+    },
+    {
+        id: 2, 
+        title: "Bright 3BR Condo - Liberty Village",
+        price: 689000,
+        type: "buy",
+        beds: 3, 
+        baths: 2, 
+        sqft: 1050, 
+        city: "Toronto, ON",
+        img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80"
+    },
+    {
+        id: 3, 
+        title: "Studio near Robson St",
+        price: 1850,
+        type: "rent",
+        beds: 0, 
+        baths: 1, 
+        sqft: 480, 
+        city: "Vancouver, BC",
+        img: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&q=80"
+    },
+    {
+        id: 4,
+        title: "Modern 2BR in Plateau-Mont-Royal",
+        price: 2400,
+        type: "rent",
+        beds: 2,
+        baths: 1,
+        sqft: 820,
+        city: "Montreal, QC",
+        img: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80"
+    },
+    {
+        id: 5, 
+        title: "Bright 3BR Condo - Liberty Village",
+        price: 689000,
+        type: "buy",
+        beds: 3, 
+        baths: 2, 
+        sqft: 1050, 
+        city: "Toronto, ON",
+        img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80"
+    },
+    {
+        id: 6, 
+        title: "Studio near Robson St",
+        price: 1850,
+        type: "rent",
+        beds: 0, 
+        baths: 1, 
+        sqft: 480, 
+        city: "Vancouver, BC",
+        img: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&q=80"
+    },
+    {
+        id: 7,
+        title: "Modern 2BR in Plateau-Mont-Royal",
+        price: 2400,
+        type: "rent",
+        beds: 2,
+        baths: 1,
+        sqft: 820,
+        city: "Montreal, QC",
+        img: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80"
+    },
+    {
+        id: 8, 
+        title: "Bright 3BR Condo - Liberty Village",
+        price: 689000,
+        type: "buy",
+        beds: 3, 
+        baths: 2, 
+        sqft: 1050, 
+        city: "Toronto, ON",
+        img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80"
+    },
+    {
+        id: 9, 
+        title: "Studio near Robson St",
+        price: 1850,
+        type: "rent",
+        beds: 0, 
+        baths: 1, 
+        sqft: 480, 
+        city: "Vancouver, BC",
+        img: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&q=80"
+    },
+    {
+        id: 10,
+        title: "Modern 2BR in Plateau-Mont-Royal",
+        price: 2400,
+        type: "rent",
+        beds: 2,
+        baths: 1,
+        sqft: 820,
+        city: "Montreal, QC",
+        img: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80"
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+];
