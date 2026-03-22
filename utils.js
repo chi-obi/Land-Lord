@@ -80,3 +80,43 @@ function calculateMortgage(price, downPayment, annualRate, years) {
 
   return Math.round(payment);
 }
+
+
+// Currency display config — symbol, locale, decimal settings
+const currencyConfig = {
+  USD: { locale: 'en-US', code: 'USD' },
+  CAD: { locale: 'en-CA', code: 'CAD' },
+  NGN: { locale: 'en-NG', code: 'NGN' },
+  AUD: { locale: 'en-AU', code: 'AUD' }
+};
+
+// Converts a price from its original currency to the user's chosen currency
+// Uses USD as the common bridge: fromCurrency → USD → toCurrency
+function convertPrice(amount, fromCurrency, toCurrency, rates) {
+  if (fromCurrency === toCurrency) return amount;
+
+  // Convert to USD first, then to target currency
+  const inUSD = amount / rates[fromCurrency];
+  return inUSD * rates[toCurrency];
+}
+
+// Formats a number as currency using the browser's built-in formatter
+function formatCurrency(amount, currencyCode) {
+  const config = currencyConfig[currencyCode];
+  return new Intl.NumberFormat(config.locale, {
+    style: 'currency',
+    currency: config.code,
+    maximumFractionDigits: 0
+  }).format(amount);
+}
+
+// The main function components.js calls — converts then formats in one step
+function displayPrice(property, activeCurrency, rates) {
+  const converted = convertPrice(
+    property.price,
+    property.currency,
+    activeCurrency,
+    rates
+  );
+  return formatCurrency(converted, activeCurrency);
+}
